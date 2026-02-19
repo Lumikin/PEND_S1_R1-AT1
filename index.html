@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,9 @@
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
             <img
-              class="w-25"
+              class="img-fluid"
+              width="80"
+              height="auto"
               src="assets/image.png"
               alt="Rápido & Seguro Logística "
             />Rápido & Seguro Logística
@@ -36,24 +38,24 @@
                 <a href="#Home" class="nav-link active ms-auto"> Home </a>
               </li>
               <li class="nav-item">
-                <a href="#Perfil" class="nav-link ms-auto"> Cadastrar </a>
+                <a href="#Cadastro" class="nav-link ms-auto"> Cadastrar </a>
               </li>
               <li class="nav-item">
-                <a href="#Sobre" class="nav-link ms-auto"> Entrar </a>
+                <a href="#Login" class="nav-link ms-auto"> Login </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <main>
-        <div class="card text-center">
+        <div class="card text-center mx-auto my-5">
           <div class="card-header">
             <h3>Login de usuario</h3>
           </div>
-          <div class="card-body">
+          <div class="card-body gap-3">
             <!-- formulario -->
             <section id="userRegister">
-              <form action="#" method="get">
+              <form action="#" method="post" class="gap-4">
                 <div class="mb-3">
                   <!-- Campo de e-mail -->
                   <label for="userEmail" class="form-label">Email</label>
@@ -77,11 +79,12 @@
                   />
                 </div>
                 <!-- Botão "Entrar" -->
-                <button type="submit" class="btn btn-primary">Entrar</button>
+                <button type="submit" class="btn btn-primary gap-3">
+                  Entrar
+                </button>
               </form>
-
-              <!-- Link "Esqueci minha senha" (apenas visual, não funcional). -->
               <button type="button" class="btn bg-body-tertiary border-dark">
+                <!-- Link "Esqueci minha senha" (apenas visual, não funcional). -->
                 Esqueci minha senha
               </button>
             </section>
@@ -89,7 +92,7 @@
         </div>
       </main>
     </header>
-    <footer>
+    <footer class="text-center">
       <p>© Rápido & Seguro Logística 2026</p>
     </footer>
 
