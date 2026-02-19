@@ -12,16 +12,72 @@
     />
   </head>
   <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="conteiner-fluid">
+        <a href="#" class="navbar-brand">
+          <img
+            class="w-25"
+            src="assets/image.png"
+            alt="Rápido & Seguro Logística "
+          />Rápido & Seguro Logística
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#Home" class="nav-link active ms-auto"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="#Perfil" class="nav-link ms-auto"> Cadastrar </a>
+            </li>
+            <li class="nav-item">
+              <a href="#Sobre" class="nav-link ms-auto"> Entrar </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <main>
-      <div>
+      <div class="card text-center">
+        <h3>Login de usuario</h3>
+
+        <!-- formulario -->
         <section id="userRegister">
           <form action="#" method="get">
-            <label for="userEmail">Email</label>
-            <input type="email" name="UserEmail" id="UserEmail" required />
-
-            <label for="userSenha">Senha</label>
-            <input type="password" name="UserEmail" id="UserEmail" />
+            <div class="mb-3">
+              <!-- Campo de e-mail -->
+              <label for="userEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                name="UserEmail"
+                id="UserEmail"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <!-- Campo de senha -->
+              <label for="userSenha" class="form-label">Senha</label>
+              <input
+                type="password"
+                name="UserEmail"
+                id="UserEmail"
+                class="form-control"
+                required
+              />
+            </div>
+            <!-- Botão "Entrar" -->
+            <button type="submit">Entrar</button>
           </form>
+
+          <!-- Link "Esqueci minha senha" (apenas visual, não funcional). -->
+          <button type="button">Esqueci minha senha</button>
         </section>
       </div>
     </main>
