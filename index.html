@@ -12,7 +12,7 @@
     />
   </head>
 
-  <body class="bg-secondary-subtle">
+  <body class="bg-secondary-subtle d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-expand-md bg-secondary-subtle">
         <div class="container-fluid">
@@ -51,56 +51,61 @@
           </div>
         </div>
       </nav>
-      <!-- ----- CARD -----  -->
-      <main>
-        <div class="conteiner">
-          <div class="card text-center mx-5 ">
-            <div class="card-header">
-              <h3>Login de usuario</h3>
-            </div>
-            <div class="card-body gap-3">
-              <!-- formulario -->
-              <section id="userRegister">
-                <form action="#" method="post" class="gap-4">
-                  <div class="mb-3">
-                    <!-- Campo de e-mail -->
-                    <label for="userEmail" class="form-label">Email</label>
-                    <input
-                      type="email"
-                      name="UserEmail"
-                      id="UserEmail"
-                      class="form-control"
-                      placeholder="seuEmail@dominio.com"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <!-- Campo de senha -->
-                    <label for="userSenha" class="form-label">Senha</label>
-                    <input
-                      type="password"
-                      name="UserPassword"
-                      id="UserPassword"
-                      class="form-control"
-                      placeholder="suaSenhaSegura"
-                      required
-                    />
-                  </div>
-                  <!-- Botão "Entrar" -->
-                  <button type="submit" class="btn btn-primary gap-3">
-                    Entrar
-                  </button>
-                </form>
-                <button type="button" class="btn bg-body-tertiary border-dark">
-                  <!-- Link "Esqueci minha senha" (apenas visual, não funcional). -->
-                  Esqueci minha senha
+    </header>
+
+    <!-- ----- CARD -----  -->
+
+    <main class="flex-fill">
+      <div class="container justify-content-center align-items-center">
+        <div class="card text-center mx-auto">
+          <div class="card-header">
+            <h3>Login de usuario</h3>
+          </div>
+          <div class="card-body gap-3">
+            <!-- formulario -->
+            <section id="userRegister">
+              <form action="#" method="post" class="gap-4">
+                <div class="mb-3">
+                  <!-- Campo de e-mail -->
+
+                  <label for="userEmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    name="UserEmail"
+                    id="UserEmail"
+                    class="form-control"
+                    placeholder="seuEmail@dominio.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <!-- Campo de senha -->
+
+                  <label for="userSenha" class="form-label">Senha</label>
+                  <input
+                    type="password"
+                    name="UserPassword"
+                    id="UserPassword"
+                    class="form-control"
+                    placeholder="suaSenhaSegura"
+                    required
+                  />
+                </div>
+                <!-- Botão "Entrar" -->
+
+                <button type="submit" class="btn btn-primary gap-3">
+                  Entrar
                 </button>
-              </section>
-            </div>
+              </form>
+              <button type="button" class="btn bg-body-tertiary border-dark">
+                <!-- Link "Esqueci minha senha" (apenas visual, não funcional). -->
+                Esqueci minha senha
+              </button>
+            </section>
           </div>
         </div>
-      </main>
-    </header>
+      </div>
+    </main>
     <footer class="text-center bg-secondary-subtle">
       <p>© Rápido & Seguro Logística 2026</p>
     </footer>
